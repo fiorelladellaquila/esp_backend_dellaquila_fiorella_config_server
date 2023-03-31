@@ -1,8 +1,6 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
 spring:
-  application:
-    name: api-movie
 
   rabbitmq:
     username: guest
@@ -13,19 +11,19 @@ spring:
   zipkin:
     baseUrl: http://localhost:9411/
 
-  datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/movie-dev
-    username: usr-movie
-    password: pwd-movie
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
+  mongodb:
+    embedded:
+      version: 4.0.2
+  data:
+    mongodb:
+      database: series-dev-mongo
+      username: usr-series-mongo
+      password: pwd-series-mongo
+      port: 27017
 
 info:
   application:
-    name: api-movie
+    name: api-serie
 
 eureka:
   instance:
