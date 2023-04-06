@@ -14,7 +14,7 @@ spring:
     baseUrl: http://localhost:9411/
 
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
+    driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/movie-dev
     username: usr-movie
     password: pwd-movie
