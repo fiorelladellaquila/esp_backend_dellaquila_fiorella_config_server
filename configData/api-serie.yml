@@ -17,8 +17,7 @@ spring:
   data:
     mongodb:
       database: series-dev-mongo
-      username: usr-series-mongo
-      password: pwd-series-mongo
+      
       port: 27017
 
 info:
