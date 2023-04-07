@@ -3,15 +3,14 @@ server:
 spring:
   application:
     name: api-catalog
-  datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/dh-esp-backend
-    username: root
-    password: root
-  jpa:
-    hibernate.ddl-auto: update
-    generate-ddl: true
-    show-sql: true
+
+  mongodb:
+    embedded:
+      version: 4.0.2
+  data:
+    mongodb:
+      database: catalog-dev
+      port: 27017
 
 info:
   application:
