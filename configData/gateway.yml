@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: ${PORT:8081}
 
 spring:
   application:
@@ -30,6 +30,9 @@ info:
     name: ${spring.application.name}
 
 eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     registerWithEureka: false
     fetchRegistry: true
