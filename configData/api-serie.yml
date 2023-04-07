@@ -1,7 +1,9 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
-spring:
 
+spring:
+  application:
+    name: api-serie
   rabbitmq:
     username: guest
     password: guest
@@ -13,10 +15,10 @@ spring:
 
   mongodb:
     embedded:
-      version: 3.6.0
+      version: 4.0.2
   data:
     mongodb:
-      database: test
+      database: series-dev
       port: 27017
 
 info:
