@@ -13,10 +13,10 @@ spring:
   zipkin:
     baseUrl: http://localhost:9411/
 
-  data:
-    mongodb:
-      database: series-dev
-      port: 27017
+data:
+  mongodb:
+    database: series-dev
+    port: 27017
 
 info:
   application:
