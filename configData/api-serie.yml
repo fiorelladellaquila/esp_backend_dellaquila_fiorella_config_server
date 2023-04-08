@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: api-serie
+
   rabbitmq:
     username: guest
     password: guest
@@ -20,6 +21,7 @@ spring:
 info:
   application:
     name: api-serie
+
 eureka:
   instance:
     hostname: localhost
