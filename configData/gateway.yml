@@ -1,5 +1,5 @@
 server:
-  port: ${PORT:8081}
+  port: 8080
 
 spring:
   application:
@@ -14,25 +14,16 @@ spring:
           uri: lb://api-catalog
           predicates:
             - Path=/api/v1/catalog/**
-
         - id: movie-service
           uri: lb://api-movie
           predicates:
-            - Path=/api/v1/movies/**
-
-        - id: serie-service
-          uri: lb://api-serie
-          predicates:
-            - Path=/api/v1/series/**
+            - Path=/api/v1/movies/save
 
 info:
   app:
     name: ${spring.application.name}
 
 eureka:
-  instance:
-    hostname: localhost
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   client:
     registerWithEureka: false
     fetchRegistry: true
