@@ -14,8 +14,7 @@ spring:
     baseUrl: http://localhost:9411/
 
   mongodb:
-    embedded:
-      version: 4.0.2
+    version: 4.0.2
   data:
     mongodb:
       database: catalog-dev
@@ -37,7 +36,7 @@ eureka:
 
 resilience4j.retry:
   instances:
-    retryInscription:
+    retry:
       maxAttempts: 3
       waitDuration: 10s
       enableExponentialBackoff: true
@@ -48,7 +47,7 @@ resilience4j.retry:
 
 resilience4j.circuitbreaker:
   instances:
-    clientInscription:
+    catalog:
       registerHealthIndicator: true
       slidingWindowSize: 10
       permittedNumberOfCallsInHalfOpenState: 3
