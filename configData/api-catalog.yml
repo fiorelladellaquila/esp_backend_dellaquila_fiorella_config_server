@@ -15,16 +15,10 @@ spring:
   mongodb:
     embedded:
       version: 4.0.2
-
   data:
     mongodb:
-      database: catalog-dev
-      authentication-database: admin
-      authSource: admin
+      database: test
       port: 27018
-      host: localhost
-      username: usr
-      password: pwd
 
 info:
   application:
