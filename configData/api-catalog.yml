@@ -15,10 +15,11 @@ spring:
   mongodb:
     embedded:
       version: 4.0.2
-    data:
-      mongodb:
-        database: catalog-dev
-        port: 27018
+
+  data:
+    mongodb:
+      database: catalog-dev
+      port: 27018
 
 info:
   application:
