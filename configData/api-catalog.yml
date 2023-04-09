@@ -14,7 +14,8 @@ spring:
 
   data:
     mongodb:
-      database: admin
+      database: catalog-dev
+      authSource: admin
       username: usr
       password: pwd
       port: 27018
