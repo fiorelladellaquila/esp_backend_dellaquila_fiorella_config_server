@@ -14,16 +14,12 @@ spring:
   zipkin:
     baseUrl: http://localhost:9411/
 
-
   data:
     mongodb:
-      database: serie-dev
-      authentication-database: admin
-      authSource: admin
-      port: 27017
-      host: localhost
+      database: admin
       username: usr
       password: pwd
+      port: 27017
 
 info:
   application:

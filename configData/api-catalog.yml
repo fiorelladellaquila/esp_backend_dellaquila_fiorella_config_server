@@ -14,13 +14,10 @@ spring:
 
   data:
     mongodb:
-      database: catalog-dev
-      authentication-database: admin
-      authSource: admin
-      port: 27018
-      host: localhost
+      database: admin
       username: usr
       password: pwd
+      port: 27018
 
 info:
   application:
